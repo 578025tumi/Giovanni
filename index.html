@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giovanni David Knight | International Automotive Entrepreneur</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <style>
+        body { background-color: #0f1115; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(180deg, rgba(15,17,21,0.7) 0%, rgba(15,17,21,1) 100%), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+        .hero-slider {
+            position: fixed; inset: 0; z-index: -1;
+            background-size: flex; background-position: center;
+            animation: slideImages 15s infinite;
+        }
+        @keyframes slideImages {
+            0%, 33% { background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070'); }
+            34%, 66% { background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070'); }
+            67%, 100% { background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070'); }
+        }
+        .slogan-animate { 
+            position: absolute;
+            animation: fadeInUp 1.5s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 0.7; transform: translateY(0); } }
+    </style>
+</head>
+<body>
+
+    <nav class="flex justify-between items-center p-6 bg-blue z-50">
+        <div class="font-bold text-xl tracking-tighter">G.D. KNIGHT</div>
+        <div class="hidden md:flex space-x-6 text-xs font-bold uppercase tracking-widest">       
+           <a href="how-we-operate.html">How It Works</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a href="https://mfcauctions.netlify.app/" class="bg-amber-500 text-white px-6 py-2 text-xs font-bold rounded-full hover:bg-black transition"><span>GO TO MY AUCTION WEBSITE</span></a>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient min-h-[80vh] flex items-center px-6">
+        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div>
+                <h2 class="text-blue-500 font-semibold tracking-widest uppercase mb-4">Founder / Shareholder / CEO</h2>
+                <h1 class="text-5xl md:text-7xl font-light mb-6">Giovanni David <span class="font-bold">Knight</span></h1>
+                <p class="text-gray-400 text-lg mb-8 leading-relaxed">
+                    International automotive entrepreneur and vehicle auction specialist with a global footprint across the USA, Canada, Europe, and Africa.
+                </p>
+                <div class="flex gap-4">
+                    <a href="YOUR_AUCTION_SITE_URL" class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 font-bold rounded-sm transition">Visit Auction Platform</a>
+                </div>
+            </div>
+            <div class="relative">
+                <!-- PHOTO PLACEHOLDER: Insert the photo you mentioned here -->
+                <img src="boss.jpeg" alt="Giovanni David Knight" class="rounded-lg shadow-2xl grayscale hover:grayscale-0 transition duration-500 border border-gray-800">
+                <div class="absolute -bottom-6 -right-6 bg-blue-600 p-6 hidden md:block">
+                    <p class="text-sm font-bold uppercase tracking-tighter">B.Comm Finance</p>
+                    <p class="text-xs opacity-80">University of Calgary</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bio / Experience Section -->
+    <section class="py-24 px-6 bg-[#16181d]">
+        <div class="max-w-4xl mx-auto">
+            <div class="relative text-center text-white slogan-animate">
+            <h3 class="text-3xl font-bold mb-12 accent-border pl-6">Professional Profile</h3>
+            
+            <div class="space-y-8 text-gray-300 leading-relaxed text-lg">
+                <p>
+                    Giovanni David Knight is an international automotive entrepreneur and vehicle auction specialist with extensive experience in the global motor industry. His professional background spans online vehicle auctions, automotive finance, fleet management, vehicle sourcing, dealer operations, and international vehicle trading across the United States, Canada, Europe, Australia, South Africa, and the United Kingdom.
+                </p>
+                
+                <p>
+                    Throughout his career, Giovanni has worked with vehicle finance institutions, dealership networks, auction platforms, and private automotive investors, building strong expertise in both retail and wholesale vehicle markets.
+                </p>
+
+                <div class="grid md:grid-cols-2 gap-6 pt-8">
+                    <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <h4 class="text-blue-400 font-bold mb-2">Global Operations</h4>
+                        <p class="text-sm">Managing large-scale vehicle remarketing and cross-border logistics across 6 continents.</p>
+                    </div>
+                    <div class="bg-white/5 p-6 rounded-lg border border-white/10">
+                        <h4 class="text-blue-400 font-bold mb-2">Digital Innovation</h4>
+                        <p class="text-sm">Founder of a modern online auction platform focused on secure, transparent transactions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-4">Get In Touch</h3>
+            <p class="text-gray-400 mb-12">Available for international consultations and automotive partnerships.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- USA -->
+                <div class="p-8 bg-[#16181d] border border-gray-800 rounded-xl hover:border-blue-500 transition">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-globe-americas"></i></div>
+                    <h4 class="text-xl font-bold mb-2">United States</h4>
+                    <p class="text-2xl font-mono mb-6">+1 213 492 7457</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="tel:+12134927457" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/12134927457" class="bg-gray-800 p-3 rounded-full hover:bg-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- South Africa -->
+                <div class="p-8 bg-[#16181d] border border-gray-800 rounded-xl hover:border-blue-500 transition">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-globe-africa"></i></div>
+                    <h4 class="text-xl font-bold mb-2">South Africa</h4>
+                    <p class="text-2xl font-mono mb-6">+27 63 311 6016</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="tel:+27633116016" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/27633116016" class="bg-gray-800 p-3 rounded-full hover:bg-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-12 border-t border-gray-900 text-center text-gray-500 text-sm">
+        <p>&copy; 2023 Giovanni David Knight. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!-- Save as how-it-works.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+      <style>
+        body { background-color: #0f1115; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(180deg, rgba(15,17,21,0.7) 0%, rgba(15,17,21,1) 100%), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+        .hero-slider {
+            position: absolute; inset: 0; z-index: -1;
+            background-size: flex; background-position: center;
+            animation: slideImages 15s infinite;
+        }
+        @keyframes slideImages {
+            0%, 33% { background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070'); }
+            34%, 66% { background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070'); }
+            67%, 100% { background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070'); }
+        }
+        .slogan-animate { animation: fadeInUp 1.5s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 0.7; transform: translateY(0); } }
+    </style>
+</head>
+<body class="bg-blue">
+    <nav class="flex justify-between items-center p-6 bg-white border-b">
+        <div class="font-bold text-xl">G.D. KNIGHT</div>
+        <div class="space-x-6 text-xs font-bold uppercase">
+            <a href="index.html">HOME</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+        <a href="https://mfcauctions.netlify.app/" class="bg-black text-white px-4 py-2 text-xs rounded-full">GO TO WEBSITE</a>
+    </nav>
+
+    <section class="max-w-5xl mx-auto py-20 px-6">
+        <h1 class="text-4xl font-bold mb-12">The Auction Process</h1>
+
+        <div class="grid md:grid-cols-2 gap-12">
+            <div class="bg-white p-8 shadow-sm border-t-4 border-amber-500">
+                <h2 class="font-bold text-xl mb-4 uppercase text-gray-800">1. Registration</h2>
+                <p class="text-gray-600 mb-4 text-sm leading-relaxed">
+                    Download Form or visit MFC branch at <strong>5 Lindsay Street, Esselen Park, Thembisa, 1626</strong> after getting your buyers code. 
+                </p>
+                <ul class="text-sm space-y-2 text-gray-700">
+                    <li>• Provide FICA documents (ID, Proof of Residence).</li>
+                    <li>• Pay refundable 20% of the buyer code.</li>
+                    <li>• Receive Buyers Code (Required for entry).</li>
+                </ul>
+            </div>
+
+            <div class="bg-white p-8 shadow-sm">
+                <h2 class="font-bold text-xl mb-4 uppercase">2. "Buy Now" Catalogue</h2>
+                <p class="text-gray-600 text-sm">Select vehicles are available for immediate purchase. Contact the Finance Manager to view the fixed-price ZAR catalogue (VAT included).</p>
+            </div>
+
+            <div class="bg-white p-8 shadow-sm">
+                <h2 class="font-bold text-xl mb-4 uppercase">3. Weekly Auctions</h2>
+                <p class="text-gray-600 text-sm">Held weekly. Viewing by appointment only. Bidding via floor (with Buyers Code) or online via MFC portal. Highest bid above reserve wins.</p>
+            </div>
+
+            <div class="bg-white p-8 shadow-sm border-l-4 border-green-500">
+                <h2 class="font-bold text-xl mb-4 uppercase text-green-700">4. FAQ & Finance</h2>
+                <p class="text-sm text-gray-700"><strong>Can I finance?</strong> Yes, Nedbank consultants are available on-site.</p>
+                <p class="text-sm text-gray-700 mt-2"><strong>Are cars tested?</strong> Yes, scheduled DEKRA reports are available.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

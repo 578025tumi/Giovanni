@@ -1,0 +1,80 @@
+<!-- Save as leadership.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .hero-slider {
+            position: absolute; inset: 0; z-index: -1;
+            background-size: flex; background-position: center;
+            animation: slideImages 15s infinite;
+        }
+        @keyframes slideImages {
+            0%, 33% { background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070'); }
+            34%, 66% { background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070'); }
+            67%, 100% { background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070'); }
+        }
+        .slogan-animate { animation: fadeInUp 1.5s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 0.7; transform: translateY(0); } }
+    
+        body { background-color: #0f1115; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(180deg, rgba(15,17,21,0.7) 0%, rgba(15,17,21,1) 100%), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+    
+        .profile-card {
+            background: #fff; border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            padding: 2rem; text-align: center;
+            max-width: 320px; margin: auto;
+        }
+        .profile-card img {
+            width: 150px; height: 150px; border-radius: 50%;
+            object-fit: cover; margin-bottom: 1rem; margin-left: auto; margin-right: auto;
+        }
+        .profile-card h2 { font-size: 1.4rem; font-weight: bold; margin: 0.5rem 0; color: #222; }
+        .profile-card p { font-size: 0.95rem; color: #555; margin: 0.25rem 0; }
+        .profile-card .btn {
+            display: inline-block; margin-top: 1rem; padding: 0.6rem 1.2rem;
+            background-color: #d4af37; color: #fff; font-weight: 600;
+            border-radius: 6px; text-decoration: none;
+        }
+    </style>
+</head>
+<body class="bg-blue">
+    <nav class="flex justify-between items-center p-6 bg-white border-b mb-12">
+        <div class="font-bold text-xl tracking-tighter">G.D. KNIGHT</div>
+        <div class="space-x-6 text-xs font-bold uppercase">
+            <a href="index.html">HOME</a>
+            <a href="how-we-operate.html">How It Works</a>
+            <a href="contact.html">Contact us</a>
+        </div>
+        <a href="https://mfcauctions.netlify.app/" class="bg-black text-white px-4 py-2 text-xs rounded-full">GO TO WEBSITE</a>
+    </nav>
+
+    <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+        <!-- Profile Card -->
+        <div>
+            <div class="profile-card">
+                <img src="boss2.jpeg" alt="Giovanni David Knight">
+                <h2>Giovanni David Knight</h2>
+                <p>Founder / Shareholder</p>
+                <p>Chief Executive Officer</p>
+                <a href="contact.html" class="btn">Connect Directly</a>
+            </div>
+        </div>
+
+        <!-- Bio Details -->
+        <div class="prose prose-lg">
+            <h3 class="text-3xl font-bold mb-6">Executive Biography</h3>
+            <p class="text- white-700 leading-relaxed">
+              David Knight is an international automotive entrepreneur and vehicle auction specialist with extensive experience in the global motor industry. His professional background spans online vehicle auctions, automotive finance, fleet management, vehicle sourcing, dealer operations, and international vehicle trading across the United States, Canada, Europe, Australia, South Africa, and the United Kingdom.
+              Throughout his career, Giovanni has worked with vehicle finance institutions, dealership networks, auction platforms, and private automotive investors, building strong expertise in both retail and wholesale vehicle markets. His leadership experience includes managing large-scale automotive operations, vehicle remarketing, cross-border vehicle logistics, and digital auction solutions.
+              <br>  
+              Giovanni later founded a modern online vehicle auction platform focused on secure transactions, trusted vehicle listings, transparent bidding systems, and customer-centered automotive services.
+              He holds a Bachelor of Commerce (Finance) Degree from the University of Calgary (Canada).
+            </p>
+        </div>
+    </div>
+</body>
+</html>

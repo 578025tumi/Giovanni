@@ -1,0 +1,68 @@
+
+<!-- Save as contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+      <style>
+        .hero-slider {
+            position: absolute; inset: 0; z-index: -1;
+            background-size: flex; background-position: center;
+            animation: slideImages 15s infinite;
+        }
+        @keyframes slideImages {
+            0%, 33% { background-image: url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?q=80&w=2070'); }
+            34%, 66% { background-image: url('https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?q=80&w=2070'); }
+            67%, 100% { background-image: url('https://images.unsplash.com/photo-1583121274602-3e2820c69888?q=80&w=2070'); }
+        }
+        .slogan-animate { animation: fadeInUp 1.5s ease-out; }
+        @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 0.7; transform: translateY(0); } }
+        body { background-color: #0f1115; color: #e5e7eb; font-family: 'Inter', sans-serif; }
+        .hero-gradient { background: linear-gradient(180deg, rgba(15,17,21,0.7) 0%, rgba(15,17,21,1) 100%), url('https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&q=80&w=2070'); background-size: cover; background-position: center; }
+        .accent-border { border-left: 4px solid #3b82f6; }
+    </style>
+</head>
+<body class="bg-blue">
+    <nav class="flex justify-between items-center p-6 bg-blue border-b">
+        <div class="font-bold text-xl uppercase">G.D. Knight</div>
+        <div class="space-x-6 text-xs font-bold uppercase">
+            <a href="index.html">Home</a>
+            <a href="how-we-operate.html">How It Works</a>
+            <a href="leadership.html">Leadership</a>
+            <a href="https://mfcauctions.netlify.app/" class="text-amber-600">VISIT OUR PAGE</a>
+        </div>
+    </nav>
+
+<!-- Contact Section -->
+    <section id="contact" class="py-24 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h3 class="text-4xl font-bold mb-4">Get In Touch</h3>
+            <p class="text-gray-400 mb-12">Available for international consultations and automotive partnerships.</p>
+            
+            <div class="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+                <!-- USA -->
+                <div class="p-8 bg-[#16181d] border border-gray-800 rounded-xl hover:border-blue-500 transition">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-globe-americas"></i></div>
+                    <h4 class="text-xl font-bold mb-2">United States</h4>
+                    <p class="text-2xl font-mono mb-6">+1 213 492 7457</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="tel:+12134927457" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/12134927457" class="bg-gray-800 p-3 rounded-full hover:bg-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+
+                <!-- South Africa -->
+                <div class="p-8 bg-[#16181d] border border-gray-800 rounded-xl hover:border-blue-500 transition">
+                    <div class="text-blue-500 text-3xl mb-4"><i class="fas fa-globe-africa"></i></div>
+                    <h4 class="text-xl font-bold mb-2">South Africa</h4>
+                    <p class="text-2xl font-mono mb-6">+27 63 311 6016</p>
+                    <div class="flex justify-center gap-4">
+                        <a href="tel:+27633116016" class="bg-gray-800 p-3 rounded-full hover:bg-blue-600 transition"><i class="fas fa-phone"></i></a>
+                        <a href="https://wa.me/27633116016" class="bg-gray-800 p-3 rounded-full hover:bg-green-600 transition"><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
